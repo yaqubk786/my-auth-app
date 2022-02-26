@@ -78,6 +78,7 @@ const App = () => {
 
   const otpSubmit = (e) => {
 
+    
     e.preventDefault();
 
     let opt_number = e.target.otp_value.value;
@@ -85,7 +86,7 @@ const App = () => {
     window.confirmationResult.confirm(opt_number).then((confirmationResult) => {
         console.log(confirmationResult);
         console.log("success");
-        window.open("/", "_self");
+        window.open("/", "_sself");
       })
       .catch((error) => {
         // User couldn't sign in (bad verification code?)
