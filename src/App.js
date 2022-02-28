@@ -86,7 +86,7 @@ const App = () => {
     window.confirmationResult.confirm(opt_number).then((confirmationResult) => {
         console.log(confirmationResult);
         console.log("success");
-        window.open("/", "_sself");
+        window.open("/", "_self");
       })
       .catch((error) => {
         // User couldn't sign in (bad verification code?)
